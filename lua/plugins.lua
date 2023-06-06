@@ -20,7 +20,10 @@ return require('packer').startup(function(use)
         requires = {'nvim-tree/nvim-web-devicons'}
     }
     use 'hrsh7th/nvim-cmp'
-    use {'L3MON4D3/LuaSnip',
-    requires = {'saadparwaiz1/cmp_luasnip'}}
+    use 'hrsh7th/cmp-nvim-lsp'
+    use {
+        'L3MON4D3/LuaSnip',
+        requires = {'saadparwaiz1/cmp_luasnip'}
+    }
 
 end)
