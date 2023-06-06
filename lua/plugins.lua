@@ -19,5 +19,7 @@ return require('packer').startup(function(use)
         'nvim-tree/nvim-tree.lua',
         requires = {'nvim-tree/nvim-web-devicons'}
     }
+    use 'hrsh7th/nvim-cmp'
+    use 'L3MON4D3/LuaSnip'
 
 end)
