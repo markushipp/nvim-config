@@ -11,8 +11,14 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/plenary.nvim'}, {'BurntSushi/ripgrep'}, {'sharkdp/fd'}}
     }
+
+    -- Themes
+    use 'no-clown-fiesta/no-clown-fiesta.nvim'
     use 'ellisonleao/gruvbox.nvim'
     use 'catppuccin/nvim'
+    use 'frenzyexists/aquarium-vim'
+
+    -- Misc plugins
     use 'nvim-lua/lsp_extensions.nvim'
     use {"williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim", "neovim/nvim-lspconfig"}
     use 'nvim-lualine/lualine.nvim'
