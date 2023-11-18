@@ -6,4 +6,4 @@ require("plugins.nvim-tree")
 require("plugins.nvim-cmp")
 require("plugins.auto-close")
 require("themes")
-
+require("options")
