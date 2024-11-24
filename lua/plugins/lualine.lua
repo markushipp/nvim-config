@@ -1,7 +1,7 @@
 require('lualine').setup {
     options = {
         icons_enabled = true,
-        theme = 'aquarium',
+        theme = 'everforest',
     },
     sections = {
         lualine_a = {

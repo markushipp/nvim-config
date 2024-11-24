@@ -5,5 +5,7 @@ require("plugins.lualine")
 require("plugins.nvim-tree")
 require("plugins.nvim-cmp")
 require("plugins.auto-close")
+require("plugins.toggle-term")
 require("themes")
 require("options")
+require'nvim-treesitter.configs'.setup{highlight={enable=true}}

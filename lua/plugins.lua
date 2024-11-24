@@ -13,11 +13,13 @@ return require('packer').startup(function(use)
     }
 
     -- Themes
+    use 'xero/miasma.nvim'
     use 'no-clown-fiesta/no-clown-fiesta.nvim'
     use 'ellisonleao/gruvbox.nvim'
     use 'catppuccin/nvim'
     use 'frenzyexists/aquarium-vim'
-
+    use 'AlexvZyl/nordic.nvim'
+    use 'sainnhe/everforest'
     -- Misc plugins
     use 'nvim-lua/lsp_extensions.nvim'
     use {"williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim", "neovim/nvim-lspconfig"}
@@ -34,4 +36,7 @@ return require('packer').startup(function(use)
     }
     use 'm4xshen/autoclose.nvim'
 
-end) 
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+  require("toggleterm").setup()
+end}
+end)
